@@ -1,3 +1,22 @@
 :root {
   font-size: 16px;
+
+  --max-width: 90rem;
+  --padding-inline: 6.5rem;
+
+  --color-hot: #FD736E;
+
+  --color-error: #FD736E;
+  --color-primary: #8DD3BB;
+  --color-secondary: #112211;
+  --color-primary-hover: #9BE0C8;
+  --color-primary-focus: #A5EBD3;
+  --color-primary-pressed: #82CBB2;
+
+  --color-text-disabled: #8F8C91;
+  --color-text-primary: #112211;
+  --color-bg-disabled: #D2D1D3;
+
+  --font-main: 'Montserrat';
+  --font-alt: 'TradeGothic';
 }
