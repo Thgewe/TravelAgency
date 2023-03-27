@@ -1,0 +1,14 @@
+.text {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: inherit;
+  font-size: var(--font-size-bg);
+  font-weight: 500;
+  line-height: 1.25rem;
+
+  & svg {
+    width: var(--width-icon-default);
+    height: var(--height-icon-default);
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { routes } from '../routes';
+import { layoutRoutes, routes } from '../routes';
 import { HOME_ROUTE } from '../utils/constants';
 import { IRoute } from '../models/route';
+import Layout from './Layout';
 
 const AppRouter = () => {
   const createRoutes = (routes: IRoute[]) => {
@@ -15,8 +16,11 @@ const AppRouter = () => {
 
   return (
     <Routes>
+      <Route element={<Layout />}>
+        {createRoutes(layoutRoutes)}
+        <Route path={'*'} element={<Navigate to={HOME_ROUTE} />} />
+      </Route>
       {createRoutes(routes)}
-      <Route path={'*'} element={<Navigate to={HOME_ROUTE} />} />
     </Routes>
   );
 };

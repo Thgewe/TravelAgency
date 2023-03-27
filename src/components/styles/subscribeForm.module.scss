@@ -1,0 +1,43 @@
+.form {
+  font-family: var(--font-alt);
+  color: var(--color-secondary);
+  padding-block: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 1rem;
+
+  & .text {
+
+    & h2 {
+      font-size: 2.75rem;
+      line-height: 3.375rem;
+      font-weight: 700;
+      width: 20rem;
+      margin-bottom: 1.5rem;
+    }
+    & h3 {
+      margin-bottom: .5rem;
+      font-size: var(--font-size-hg);
+      font-weight: 700;
+      line-height: 1.5625rem;
+      opacity: .8;
+    }
+    & p {
+      font-family: var(--font-main);
+      font-size: var(--font-size-bg);
+      line-height: 1.25rem;
+      font-weight: 500;
+      opacity: .7;
+    }
+  }
+
+  & .inputs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}

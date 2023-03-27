@@ -1,0 +1,58 @@
+//@mixin primaryTextStates {
+//
+//  color: var(--color-secondary);
+//  transition: color .2s;
+//
+//  &:not([disabled]):hover {
+//    color: var(--color-primary-hover);
+//  }
+//  &:not([disabled]):focus {
+//    color: var(--color-secondary-focus);
+//  }
+//  &:not([disabled]):active {
+//    color: var(--color-primary-pressed);
+//  }
+//}
+@mixin secondaryTextStates {
+
+  color: var(--color-secondary);
+  transition: color .2s;
+
+  &:not([disabled]):hover {
+    color: var(--color-primary-hover);
+  }
+  &:not([disabled]):focus {
+    color: var(--color-secondary-focus);
+  }
+  &:not([disabled]):active {
+    color: var(--color-primary-pressed);
+  }
+}
+@mixin primaryBackgroundColorStates {
+
+  background-color: var(--color-primary);
+
+  &:not([disabled]):hover {
+    background-color: var(--color-primary-hover);
+  }
+  &:not([disabled]):focus {
+    background-color: var(--color-primary-focus);
+  }
+  &:not([disabled]):active {
+    background-color: var(--color-primary-pressed);
+  }
+}
+@mixin secondaryBackgroundColorStates {
+
+  background-color: var(--color-secondary);
+
+  &:not([disabled]):hover {
+    background-color: var(--color-secondary-hover);
+  }
+  &:not([disabled]):focus {
+    background-color: var(--color-secondary-focus);
+  }
+  &:not([disabled]):active {
+    background-color: var(--color-secondary-pressed);
+  }
+}

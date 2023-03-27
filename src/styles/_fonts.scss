@@ -1,23 +1,23 @@
 // Trade Gothic
 @font-face {
   font-family: 'TradeGothic';
-  src: url('./fonts/TradeGothic/TradeGothicLT.eot');
-  src: local('Trade Gothic LT'), local('./fonts/TradeGothic/TradeGothicLT'),
-  url('./fonts/TradeGothic/TradeGothicLT.eot?#iefix') format('embedded-opentype'),
-  url('./fonts/TradeGothic/TradeGothicLT.woff2') format('woff2'),
-  url('./fonts/TradeGothic/TradeGothicLT.woff') format('woff'),
-  url('./fonts/TradeGothic/TradeGothicLT.ttf') format('truetype');
+  src: url('./fonts/TradeGothic/TradeGothicLT-Extended.eot');
+  src: local('Trade Gothic LT'), local('./fonts/TradeGothic/TradeGothicLT-Extended'),
+  url('./fonts/TradeGothic/TradeGothicLT-Extended.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/TradeGothic/TradeGothicLT-Extended.woff2') format('woff2'),
+  url('./fonts/TradeGothic/TradeGothicLT-Extended.woff') format('woff'),
+  url('./fonts/TradeGothic/TradeGothicLT-Extended.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'TradeGothic';
-  src: url('./fonts/TradeGothic/TradeGothicLT-Bold.eot');
-  src: local('Trade Gothic LT Bold'), local('./fonts/TradeGothic/TradeGothicLT-Bold'),
-  url('./fonts/TradeGothic/TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),
-  url('./fonts/TradeGothic/TradeGothicLT-Bold.woff2') format('woff2'),
-  url('./fonts/TradeGothic/TradeGothicLT-Bold.woff') format('woff'),
-  url('./fonts/TradeGothic/TradeGothicLT-Bold.ttf') format('truetype');
+  src: url('./fonts/TradeGothic/TradeGothicLT-BoldExtended.eot');
+  src: local('Trade Gothic LT Bold'), local('./fonts/TradeGothic/TradeGothicLT-BoldExtended'),
+  url('./fonts/TradeGothic/TradeGothicLT-BoldExtended.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/TradeGothic/TradeGothicLT-BoldExtended.woff2') format('woff2'),
+  url('./fonts/TradeGothic/TradeGothicLT-BoldExtended.woff') format('woff'),
+  url('./fonts/TradeGothic/TradeGothicLT-BoldExtended.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }

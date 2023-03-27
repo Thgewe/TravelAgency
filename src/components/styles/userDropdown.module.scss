@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+
+
+.dropdown {
+  position: relative;
+
+  & .button {
+
+    @include secondaryTextStates;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    height: 100%;
+
+    font-weight: 600;
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    user-focus: true;
+
+
+    & img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+  }
+
+  & .drop {
+    position: absolute;
+    z-index: var(--z-index-top);
+    top: 100%;
+    right: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+  padding-inline: var(--padding-inline-min);
+  margin-top: 16.875rem;
+
+  & .container {
+    padding-block: 13.625rem 4rem;
+    max-width: calc(var(--max-width) - 2 * var(--padding-inline));
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15rem;
+
+    & .subscribe {
+      position: absolute;
+      bottom: 16.75rem;
+      left: 0;
+      right: 0;
+    }
+
+    & .social {
+      & > a {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

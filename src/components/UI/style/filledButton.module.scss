@@ -1,0 +1,63 @@
+@import '../../../styles/mixins';
+
+.button {
+  @include secondaryBackgroundColorStates;
+  align-self: center;
+  padding: 1rem;
+  color: var(--color-white);
+  border-radius: .5rem;
+  font-family: var(--font-main);
+  font-size: var(--font-size-md);
+  text-align: center;
+  min-width: 6.5rem;
+  font-weight: 600;
+  outline: none;
+  border: var(--width-border) solid var(--color-secondary);
+  transition: border-radius .2s, background-color .2s, border-color .2s;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 0;
+  }
+  &:focus {
+    outline: var(--width-border) solid var(--color-secondary);
+    border-color: var(--color-white);
+  }
+  &:active {
+    border-radius: 0;
+    outline: none;
+  }
+
+  &.light {
+    @include primaryBackgroundColorStates;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: var(--width-border) solid var(--color-primary);
+
+    &:hover {
+      border-radius: 0;
+    }
+    &:focus {
+      outline: var(--width-border) solid var(--color-primary);
+      border-color: var(--color-white);
+    }
+    &:active {
+      border-radius: 0;
+      outline: none;
+    }
+  }
+
+  &.width {
+    width: 100%;
+  }
+  &.height {
+    height: 100%;
+  }
+
+  &:disabled {
+    background-color: var(--color-bg-disabled);
+    color: var(--color-text-disabled);
+    pointer-events: none;
+    border-color: var(--color-bg-disabled);
+  }
+}

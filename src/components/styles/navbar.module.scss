@@ -1,0 +1,29 @@
+.navbar {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  & .links {
+    display: flex;
+    align-self: stretch;
+    height: auto;
+    gap: 2rem;
+
+    &:first-child {
+      justify-self: flex-start;
+    }
+    &:last-child {
+      justify-self: flex-end;
+    }
+  }
+  & .logo {
+    height: 2.25rem;
+    margin-block: 1.6rem;
+    justify-self: center;
+
+    & svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

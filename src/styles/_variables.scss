@@ -3,15 +3,20 @@
 
   --max-width: 90rem;
   --padding-inline: 6.5rem;
+  --padding-inline-min: 1.5rem;
 
   --color-hot: #FD736E;
-
+  --color-white: #ffffff;
   --color-error: #FD736E;
   --color-primary: #8DD3BB;
-  --color-secondary: #112211;
+  --color-primary-light: #CDEAE1;
   --color-primary-hover: #9BE0C8;
   --color-primary-focus: #A5EBD3;
   --color-primary-pressed: #82CBB2;
+  --color-secondary: #112211;
+  --color-secondary-hover: #1a351a;
+  --color-secondary-focus: #214421;
+  --color-secondary-pressed: #254d25;
 
   --color-text-disabled: #8F8C91;
   --color-text-primary: #112211;
@@ -19,4 +24,16 @@
 
   --font-main: 'Montserrat';
   --font-alt: 'TradeGothic';
+
+  --font-size-sm: .75rem;
+  --font-size-md: .875rem;
+  --font-size-bg: 1rem;
+  --font-size-hg: 1.25rem;
+  --font-size-gt: 1.5rem;
+
+  --z-index-top: 10;
+
+  --width-icon-default: 1.5rem;
+  --height-icon-default: 1.5rem;
+  --width-border: .0625rem;
 }

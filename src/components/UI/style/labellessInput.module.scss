@@ -1,0 +1,15 @@
+.input {
+  padding: 1.125rem 1rem;
+  font-family: var(--font-main);
+  font-size: var(--font-size-bg);
+  line-height: 1.25rem;
+  color: #1C1B1F;
+  background-color: var(--color-white);
+  width: 100%;
+  border-radius: .25rem;
+  border: none;
+
+  &:focus {
+    outline: var(--width-border) solid var(--color-secondary);
+  }
+}

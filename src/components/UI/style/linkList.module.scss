@@ -1,0 +1,21 @@
+.list {
+  font-size: var(--font-size-bg);
+  list-style: none;
+
+  & li {
+    color: var(--color-secondary);
+  }
+  & li + li {
+    margin-top: .75rem;
+  }
+  & li:first-child {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  & a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-secondary);
+    opacity: .7;
+  }
+}

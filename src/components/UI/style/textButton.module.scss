@@ -1,0 +1,18 @@
+@import '../../../styles/mixins';
+
+.button {
+  @include secondaryTextStates;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  font-family: var(--font-main);
+
+  &:disabled {
+    color: var(--color-text-disabled);
+    pointer-events: none;
+  }
+}
