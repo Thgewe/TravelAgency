@@ -1,0 +1,50 @@
+.card {
+  padding: 1rem;
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 1rem;
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(17, 34, 17, 0.15);
+  }
+
+  & .image {
+    display: block;
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+  }
+
+  & .info {
+    & > h4 {
+      margin-bottom: .5rem;
+      font-weight: 600;
+      font-size: var(--font-size-bg);
+      opacity: .7;
+    }
+
+    & > div {
+      font-weight: 500;
+      font-size: var(--font-size-md);
+
+      & > span + span {
+        margin-left: 1.25rem;
+        position: relative;
+
+        &::before {
+          content: '•';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -.725rem;
+        }
+      }
+    }
+  }
+}

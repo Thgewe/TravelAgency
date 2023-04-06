@@ -1,0 +1,28 @@
+.button {
+  font-family: var(--font-main);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-secondary);
+  border-radius: .25rem;
+  border: var(--width-border) solid var(--color-primary);
+  cursor: pointer;
+  padding: .75rem 1rem;
+  background-color: transparent;
+  transition: border-color .2s;
+
+  &:not([disabled]):hover {
+    border-color: var(--color-primary-hover);
+  }
+  &:not([disabled]):focus {
+    border-color: var(--color-primary);
+    outline: var(--width-border) solid var(--color-primary);
+  }
+  &:not([disabled]):active {
+    border-color: var(--color-primary-pressed);
+  }
+  &:disabled {
+    color: var(--color-text-disabled);
+    border-color: var(--color-bg-disabled);
+    pointer-events: none;
+  }
+}
