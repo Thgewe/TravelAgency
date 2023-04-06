@@ -17,6 +17,13 @@
     cursor: pointer;
     user-focus: true;
 
+    &.white {
+      color: #ffffff;
+
+      &:not([disabled]):focus {
+        color: var(--color-primary);
+      }
+    }
 
     & img {
       border-radius: 50%;

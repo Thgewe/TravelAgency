@@ -5,11 +5,21 @@ interface ITextButtonProps {
   text: string;
   clickHandler: (event: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
+  isWhite?: boolean;
 }
 
-const TextButton: FC<ITextButtonProps> = ({ text, clickHandler, disabled }) => {
+const TextButton: FC<ITextButtonProps> = ({
+  text,
+  clickHandler,
+  disabled,
+  isWhite,
+}) => {
   return (
-    <button className={cl.button} onClick={clickHandler} disabled={disabled}>
+    <button
+      className={cl.button + (isWhite ? ' ' + cl.white : '')}
+      onClick={clickHandler}
+      disabled={disabled}
+    >
       {text}
     </button>
   );

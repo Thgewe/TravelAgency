@@ -1,0 +1,41 @@
+.form {
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(141, 211, 187, 0.15);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+
+  &.transparent {
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  & .title {
+    font-size: var(--font-size-hg);
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  & .inputs {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &.flight > *:nth-child(2) {
+      flex-shrink: 0;
+      width: 8.75rem;
+    }
+    &.stays > *:first-child {
+      flex-shrink: 0;
+      width: 26rem;
+    }
+  }
+  & > button {
+    margin-left: auto;
+  }
+}

@@ -14,6 +14,14 @@
   border-bottom: .3125rem solid transparent;
   transition: border-bottom-color .3s;
 
+  &.white {
+    color: #ffffff;
+
+    &:not([disabled]):focus {
+      color: var(--color-primary);
+    }
+  }
+
   &.active {
     border-bottom-color: var(--color-primary);
   }

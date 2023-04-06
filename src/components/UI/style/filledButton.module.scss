@@ -47,11 +47,34 @@
     }
   }
 
+  &.white {
+    @include primaryBackgroundColorStates;
+    color: var(--color-secondary);
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding: .875rem 1rem;
+    &:not([disabled]):focus {
+      color: var(--color-primary);
+      outline: var(--width-border) solid var(--color-primary);
+    }
+  }
+
   &.width {
     width: 100%;
   }
   &.height {
     height: 100%;
+  }
+
+  &.icon {
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      width: 1rem;
+      height: 1rem;
+      margin-right: .3125rem;
+    }
   }
 
   &:disabled {

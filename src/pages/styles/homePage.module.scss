@@ -1,0 +1,8 @@
+.home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  & .main {
+    padding-inline: 6.5rem;
+  }
+}

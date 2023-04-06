@@ -16,6 +16,19 @@
       justify-self: flex-end;
     }
   }
+
+  &.main {
+    align-items: center;
+
+    & .links {
+      height: fit-content;
+      align-self: unset;
+    }
+    & .logo {
+      margin-block: 0;
+    }
+  }
+
   & .logo {
     height: 2.25rem;
     margin-block: 1.6rem;

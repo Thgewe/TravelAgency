@@ -1,0 +1,37 @@
+.welcome {
+  background:
+          linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)),
+          url("../../images/png/main-top.png") no-repeat center;
+  background-size: cover;
+  height: 37.5rem;
+  border-radius: 1.5rem;
+  margin: 1.875rem 1.875rem 16.375rem;
+  padding: 1.5rem 2rem;
+
+  & .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 4.875rem;
+    margin-bottom: 9.375rem;
+
+    & > span:first-child {
+      font-family: var(--font-alt);
+      font-weight: 700;
+      font-size: 2.75rem;
+      margin-bottom: .25rem;
+    }
+    & > span:nth-child(2) {
+      font-family: var(--font-alt);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+    & > span:last-child {
+      font-weight: 600;
+      font-size: var(--font-size-hg);
+    }
+  }
+}

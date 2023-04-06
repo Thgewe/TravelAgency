@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import cl from './styles/userDropdown.module.scss';
 import image from '../images/png/main-top.png';
 import UserDropdownTongue from './UserDropdownTongue';
 
-const UserDropdown = () => {
+interface IUserDropdownProps {
+  isWhite?: boolean;
+}
+
+const UserDropdown: FC<IUserDropdownProps> = ({ isWhite }) => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
     <div className={cl.dropdown}>
       <div
-        className={cl.button}
+        className={cl.button + (isWhite ? ' ' + cl.white : '')}
         tabIndex={0}
         onClick={() => setIsActive(!isActive)}
       >

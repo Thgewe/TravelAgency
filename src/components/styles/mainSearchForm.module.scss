@@ -1,0 +1,37 @@
+@import '../../styles/mixins';
+
+.form {
+
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+  border-radius: 1rem;
+  background-color: #ffffff;
+
+  & .navigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    & > span {
+      display: block;
+      height: 3rem;
+      width: .0625rem;
+      background-color: #D7E2EE;
+      margin-inline: 2rem;
+    }
+
+    & > div {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      border-top: .25rem solid transparent;
+      border-bottom: .25rem solid transparent;
+      cursor: pointer;
+      @include secondaryTextStates;
+
+      &.active {
+        border-bottom-color: var(--color-primary);
+      }
+    }
+  }
+}

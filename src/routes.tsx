@@ -9,6 +9,7 @@ import {
   STAYS_ROUTE,
 } from './utils/constants';
 import { IRoute } from './models/route';
+import FlightPage from './pages/FlightPage';
 
 export const routes: IRoute[] = [
   {
@@ -21,17 +22,17 @@ export const routes: IRoute[] = [
     name: 'flight',
     element: <div>SIGNUP</div>,
   },
-];
-export const layoutRoutes: IRoute[] = [
   {
     path: HOME_ROUTE,
     name: 'home',
     element: <HomePage />,
   },
+];
+export const layoutRoutes: IRoute[] = [
   {
     path: FLIGHT_ROUTE,
     name: 'flight',
-    element: <HomePage />,
+    element: <FlightPage />,
   },
   {
     path: STAYS_ROUTE,

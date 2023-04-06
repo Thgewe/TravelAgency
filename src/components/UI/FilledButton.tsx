@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, SVGProps } from 'react';
 import cl from './style/filledButton.module.scss';
 
 interface IFilledButtonProps {
@@ -9,6 +9,8 @@ interface IFilledButtonProps {
   fillHeight?: boolean;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
+  Icon?: FC<SVGProps<SVGSVGElement>>;
+  isWhite?: boolean;
 }
 
 const FilledButton: FC<IFilledButtonProps> = ({
@@ -19,6 +21,8 @@ const FilledButton: FC<IFilledButtonProps> = ({
   disabled,
   fillHeight,
   type,
+  Icon,
+  isWhite,
 }) => {
   return (
     <button
@@ -26,12 +30,15 @@ const FilledButton: FC<IFilledButtonProps> = ({
         cl.button +
         (isLight ? ' ' + cl.light : '') +
         (fillWidth ? ' ' + cl.width : '') +
-        (fillHeight ? ' ' + cl.height : '')
+        (fillHeight ? ' ' + cl.height : '') +
+        (Icon ? ' ' + cl.icon : '') +
+        (isWhite ? ' ' + cl.white : '')
       }
       onClick={clickHandler}
       disabled={disabled}
       type={type}
     >
+      {Icon && <Icon />}
       {text}
     </button>
   );

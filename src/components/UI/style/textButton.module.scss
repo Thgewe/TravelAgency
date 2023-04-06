@@ -11,6 +11,10 @@
   font-weight: 600;
   font-family: var(--font-main);
 
+  &.white {
+    color: #ffffff;
+  }
+
   &:disabled {
     color: var(--color-text-disabled);
     pointer-events: none;
