@@ -12,11 +12,11 @@ import paris from '../images/png/Paris.png';
 import tokyo from '../images/png/Tokyo.png';
 import flights from '../images/png/homeFlights.png';
 import hotels from '../images/png/homeHotels.png';
-import BorderedButton from './UI/BorderedButton';
 import HomePopularBottomNavCard from './HomePopularBottomNavCard';
 import { FLIGHT_ROUTE, STAYS_ROUTE } from '../utils/constants';
 import { ReactComponent as PaperPlane } from '../images/svg/icons/Paper Plane-True.svg';
 import { ReactComponent as Bed } from '../images/svg/icons/ion_bed.svg';
+import SectionHead from './SectionHead';
 
 const HomePopular = () => {
   const cities = [
@@ -69,16 +69,13 @@ const HomePopular = () => {
 
   return (
     <section className={cl.popular}>
-      <div className={cl.head}>
-        <div className={cl.text}>
-          <h2>Plan your perfect trip</h2>
-          <p>Search Flights & Places Hire to our most popular destinations</p>
-        </div>
-        <BorderedButton
-          text={'See more places'}
-          clickHandler={() => console.log('click')}
-        />
-      </div>
+      <SectionHead
+        title={'Plan your perfect trip'}
+        description={
+          'Search Flights & Places Hire to our most popular destinations'
+        }
+        buttonText={'See more places'}
+      />
       <div className={cl.grid}>
         {cities.map((city) => (
           <HomePopularCard key={city.id} image={city.image} name={city.name} />

@@ -1,0 +1,11 @@
+.reviews {
+
+  & .cards {
+    display: flex;
+    gap: 3rem;
+
+    &.drag {
+      user-select: none;
+    }
+  }
+}

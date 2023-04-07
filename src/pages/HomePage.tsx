@@ -3,6 +3,7 @@ import cl from './styles/homePage.module.scss';
 import Footer from '../components/Footer';
 import HomeWelcome from '../components/HomeWelcome';
 import HomePopular from '../components/HomePopular';
+import HomeReviews from '../components/HomeReviews';
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
         <HomeWelcome />
         <main className={cl.main}>
           <HomePopular />
+          <HomeReviews />
         </main>
       </div>
       <Footer />

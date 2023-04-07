@@ -1,0 +1,18 @@
+.rate {
+  position: relative;
+  width: calc((var(--width-icon-default) + .75rem) * 5 - .75rem);
+  height: var(--height-icon-default);
+
+  & .active, & .inactive {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: .75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    & > svg {
+      flex-shrink: 0;
+    }
+  }
+}
