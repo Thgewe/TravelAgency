@@ -10,7 +10,13 @@ import london from '../images/png/London.png';
 import newYork from '../images/png/NewYork.png';
 import paris from '../images/png/Paris.png';
 import tokyo from '../images/png/Tokyo.png';
+import flights from '../images/png/homeFlights.png';
+import hotels from '../images/png/homeHotels.png';
 import BorderedButton from './UI/BorderedButton';
+import HomePopularBottomNavCard from './HomePopularBottomNavCard';
+import { FLIGHT_ROUTE, STAYS_ROUTE } from '../utils/constants';
+import { ReactComponent as PaperPlane } from '../images/svg/icons/Paper Plane-True.svg';
+import { ReactComponent as Bed } from '../images/svg/icons/ion_bed.svg';
 
 const HomePopular = () => {
   const cities = [
@@ -77,6 +83,28 @@ const HomePopular = () => {
         {cities.map((city) => (
           <HomePopularCard key={city.id} image={city.image} name={city.name} />
         ))}
+      </div>
+      <div className={cl.bottom}>
+        <HomePopularBottomNavCard
+          buttonText={'Show Flights'}
+          ButtonIcon={PaperPlane}
+          navigateTo={FLIGHT_ROUTE}
+          image={flights}
+          name={'Flights'}
+          description={
+            'Search Flights & Places Hire to our most popular destinations'
+          }
+        />
+        <HomePopularBottomNavCard
+          buttonText={'Show Hotels'}
+          ButtonIcon={Bed}
+          navigateTo={STAYS_ROUTE}
+          image={hotels}
+          name={'Hotels'}
+          description={
+            'Search hotels & Places Hire to our most popular destinations'
+          }
+        />
       </div>
     </section>
   );
