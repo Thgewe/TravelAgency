@@ -27,13 +27,13 @@ export const routes: IRoute[] = [
     name: 'home',
     element: <HomePage />,
   },
-];
-export const layoutRoutes: IRoute[] = [
   {
     path: FLIGHT_ROUTE,
     name: 'flight',
     element: <FlightPage />,
   },
+];
+export const layoutRoutes: IRoute[] = [
   {
     path: STAYS_ROUTE,
     name: 'stays',

@@ -1,0 +1,15 @@
+.map {
+  margin-bottom: 5rem;
+
+  & .head {
+    box-sizing: content-box;
+    max-width: calc(var(--max-width) - var(--padding-inline) * 2);
+    margin: 0 auto;
+    padding-inline: var(--padding-inline-min);
+  }
+
+  & .image {
+    background: url('../../images/svg/flightMap.svg') center / contain no-repeat;
+    padding-top: 33.75%;
+  }
+}

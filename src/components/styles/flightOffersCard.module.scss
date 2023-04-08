@@ -1,0 +1,39 @@
+.card {
+  border-radius: 0.75rem;
+  padding-top: 142%;
+  position: relative;
+
+  & .main {
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    & .text {
+      color: #FFFFFF;
+      font-family: var(--font-main);
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-areas: 'a a b' 'c c b';
+
+      & > h4 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        grid-area: a;
+      }
+      & > p {
+        font-weight: 400;
+        font-size: var(--font-size-sm);
+        grid-area: c;
+      }
+      & > span {
+        font-weight: 600;
+        font-size: 1.5rem;
+        grid-area: b;
+        justify-self: flex-end;
+        align-self: end;
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ import HomeWelcome from '../components/HomeWelcome';
 import HomePopular from '../components/HomePopular';
 import HomeReviews from '../components/HomeReviews';
 
+// TODO: navigation
+
 const HomePage = () => {
   return (
     <>

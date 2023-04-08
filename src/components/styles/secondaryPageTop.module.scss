@@ -1,0 +1,46 @@
+.top {
+  margin-bottom: 17.25rem;
+  padding-top: 37%;
+  position: relative;
+
+  & .container {
+    position: absolute;
+    width: 100%;
+    top: 5rem;
+    padding-inline: var(--padding-inline-min);
+
+    & .text {
+      width: 100%;
+      max-width: calc(var(--max-width) - var(--padding-inline) * 2);
+      padding-inline: 1.375rem;
+      margin: 0 auto;
+      color: #ffffff;
+
+      & > h1 {
+        font-family: var(--font-alt);
+        max-width: 27.5rem;
+        font-weight: 700;
+        font-size: 2.75rem;
+      }
+      & > p {
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: var(--font-size-hg);
+      }
+    }
+  }
+
+
+
+  & .form {
+    position: absolute;
+    bottom: -12.25rem;
+    width: 100%;
+    padding-inline: var(--padding-inline-min);
+
+    & > form {
+      margin: 0 auto;
+      max-width: calc(var(--max-width) - var(--padding-inline) * 2);
+    }
+  }
+}

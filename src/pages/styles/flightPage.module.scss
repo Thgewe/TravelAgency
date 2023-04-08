@@ -1,0 +1,6 @@
+.container {
+  box-sizing: content-box;
+  padding-inline: var(--padding-inline-min);
+  max-width: calc(var(--max-width) - var(--padding-inline) * 2);
+  margin: 0 auto;
+}
